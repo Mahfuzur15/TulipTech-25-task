@@ -31,7 +31,3 @@ Different functionality with different data match.
 ## Authors
 
 - Mahfuz TusharTulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task by Mahfuz
