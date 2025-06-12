@@ -17,10 +17,10 @@ public class StucommunifyHomePage extends CommonMethods {
 
 	By uploadImageField1 = By.xpath("//span[normalize-space()='Upload Image']");
 	By uploadImageField = By.xpath("//input[@type='file']");
-	
-    // Set the image file path
-    String imagePath1 = "C:/Users/Reve/eclipse-workspace/tulipTech-automation-test/images/image1.jpeg";
-    String imagePath2 = "C:/Users/Reve/eclipse-workspace/tulipTech-automation-test/images/image2.jpeg";
+
+	// Set the image file path
+	String imagePath1 = "C:/Users/Reve/eclipse-workspace/tulipTech-automation-test/images/image1.jpeg";
+	String imagePath2 = "C:/Users/Reve/eclipse-workspace/tulipTech-automation-test/images/image2.jpeg";
 
 
 	By previewBtn = By.cssSelector("button[class='ant-btn css-1s7zzkx ant-btn-default flex justify-center place-items-center rounded-none h-8 text-primary font-bold border-none']");
@@ -32,48 +32,43 @@ public class StucommunifyHomePage extends CommonMethods {
 
 	public void fillUpSocialPost(String postText) throws InterruptedException {
 
-		
+
 		clickButton(createPostBtn);
 		clickButton(socialPostBtn);
 		sendText(postInputField, postText);
-	
-
-//Thread.sleep(5000);
-
-hoverOnElement(uploadImageField1);
 
 
+		//Thread.sleep(5000);
 
-JavascriptExecutor js = (JavascriptExecutor) driver;
-js.executeScript("arguments[0].style.display='block';", driver.findElement(uploadImageField));
+		hoverOnElement(uploadImageField1);
 
-//Upload the image by sending the file path
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].style.display='block';", driver.findElement(uploadImageField));
+
+		//Upload the image by sending the file path
 		sendText(uploadImageField,imagePath1);
-		
-		
+
+
 		hoverOnElement(uploadImageField1);
 
 		js.executeScript("arguments[0].style.display='block';", driver.findElement(uploadImageField));
-		
 		// Upload the image by sending the file path
 		sendText(uploadImageField,imagePath2);
-		
+
 		clickButton(previewBtn);
 		clickButton(publishBtn);
-		
-		
-		
+
 	}
-	
+
 	public String postCreatedSuccessfull() {
 
 		return getText(verifyPost);
 	}
-	
-	
+
+
 	public String postTitleVerify() {
 
 		return getText(verifyTitle);
 	}
-	
+
 }

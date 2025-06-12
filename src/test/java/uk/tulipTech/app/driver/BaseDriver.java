@@ -30,14 +30,13 @@ public class BaseDriver {
 
 		// Check if it is 'firefoxx'
 		if (browser.equalsIgnoreCase("firefox")) {
-			// create firefox
+			// set path to firefox
 			driver = new FirefoxDriver();
 
 		}
 		// Check if it is 'chrome'
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chrome
-
 			driver = new ChromeDriver();
 
 		}
@@ -76,7 +75,7 @@ public class BaseDriver {
 	
 	@AfterSuite
 	public void tearDown() {
-//		driver.quit();
+		driver.quit();
 
 	}
 
