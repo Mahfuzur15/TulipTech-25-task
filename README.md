@@ -1,6 +1,6 @@
-# MyAlice24-AUTOMATION-TASK-2024
+# TulipTech-AUTOMATION-TASK-2025
 This project automates the test.com website's
-Search functionality with different data match.
+Different functionality with different data match.
 
 ## Technology used
   
@@ -31,7 +31,3 @@ Search functionality with different data match.
 ## Authors
 
 - Mahfuz TusharTulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task
-# TulipTech-25-task by Mahfuz
