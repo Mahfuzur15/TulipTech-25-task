@@ -3,13 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.casespackage.T001_CreateNewAccount">
+      <class name="uk.tulipTech.app.testcase.AllTestCases">
         <methods>
+          <include name="setup"/>
+          <include name="takeScreenshotOnFailure"/>
+          <include name="checkLoginSuccessful"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="registration" invocation-numbers="0 1"/>
+          <include name="verifyPostTitle"/>
+          <include name="verifySocialPostCreation"/>
+          <include name="loginFunctionality"/>
+          <include name="createSocialPost"/>
         </methods>
-      </class> <!-- test.casespackage.T001_CreateNewAccount -->
+      </class> <!-- uk.tulipTech.app.testcase.AllTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

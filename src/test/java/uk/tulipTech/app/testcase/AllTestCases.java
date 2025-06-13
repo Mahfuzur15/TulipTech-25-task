@@ -21,6 +21,7 @@ public class AllTestCases extends BaseDriver {
 
 	}
 	
+	
 	@Test
 	public void checkLoginSuccessful() throws InterruptedException {
 
@@ -33,9 +34,6 @@ public class AllTestCases extends BaseDriver {
 	    softAssert.assertEquals(actualUrl, expectedUrl);
 		softAssert.assertAll();
 	}
-	
-	
-	
 	
 
 	@Test

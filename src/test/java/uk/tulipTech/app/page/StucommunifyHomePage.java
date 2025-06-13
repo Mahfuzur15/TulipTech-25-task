@@ -37,20 +37,16 @@ public class StucommunifyHomePage extends CommonMethods {
 		clickButton(socialPostBtn);
 		sendText(postInputField, postText);
 
-
 		//Thread.sleep(5000);
 
 		hoverOnElement(uploadImageField1);
-
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].style.display='block';", driver.findElement(uploadImageField));
-
 		//Upload the image by sending the file path
 		sendText(uploadImageField,imagePath1);
 
 
 		hoverOnElement(uploadImageField1);
-
 		js.executeScript("arguments[0].style.display='block';", driver.findElement(uploadImageField));
 		// Upload the image by sending the file path
 		sendText(uploadImageField,imagePath2);

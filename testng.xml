@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="ai.myalice.app.testcase.AllTestCases"/>
+      <class name="uk.tulipTech.app.testcase.AllTestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
